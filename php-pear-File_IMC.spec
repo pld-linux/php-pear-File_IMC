@@ -28,7 +28,7 @@ Contact_Vcard_Parse. See the example output for the new structure.
 Also different from Contact_Vcard is the use of a factory pattern.
 Again, see the examples. 
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Ta klasa pozwala programowo tworzyæ pliki vCard i vCalendar oraz
