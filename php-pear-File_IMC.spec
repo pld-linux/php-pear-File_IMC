@@ -1,5 +1,3 @@
-# ToDo:
-# - pl description
 %include	/usr/lib/rpm/macros.php
 %define         _class          File
 %define         _subclass       IMC
@@ -26,11 +24,22 @@ Allows you to programmatically create a vCard or vCalendar, and fetch
 the text.
 
 IMPORTANT: The array structure has changed slightly from
-Contact_Vcard_Parse. See the example output for the new structure. Also
-different from Contact_Vcard is the use of a factory pattern. Again, see
-the examples. 
+Contact_Vcard_Parse. See the example output for the new structure.
+Also different from Contact_Vcard is the use of a factory pattern.
+Again, see the examples. 
 
 This class has in PEAR status: %{_status}.
+
+%description -l pl
+Ta klasa pozwala programowo tworzyæ pliki vCard i vCalendar oraz
+pobieraæ tekst.
+
+WA¯NE: struktura tablic zmieni³a siê nieco w stosunku do
+Contact_Vcard_Parse. Now± strukturê mo¿na obejrzeæ w przyk³adzie.
+U¿ycie wzorców tak¿e ró¿ni siê od Contact_Vcard, co równie¿ mo¿na
+zobaczyæ w przyk³adach.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
