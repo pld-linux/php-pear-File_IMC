@@ -15,7 +15,7 @@ License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	48b2b15969f5f5aecaf8e76eef03a6d1
-URL:		http://pear.php.net/package/%{_pearname}/
+URL:		http://pear.php.net/package/File_IMC/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
