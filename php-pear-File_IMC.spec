@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          File
-%define         _subclass       IMC
+%define		_class		File
+%define		_subclass	IMC
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Create and parse Internet Mail Consortium-style files
-Summary(pl):	%{_pearname} - Tworzenie i parsowanie plików typu Internet Mail Consortium
+Summary:	%{_pearname} - create and parse Internet Mail Consortium-style files
+Summary(pl):	%{_pearname} - tworzenie i parsowanie plików typu Internet Mail Consortium
 Name:		php-pear-%{_pearname}
 Version:	0.3
 Release:	1
