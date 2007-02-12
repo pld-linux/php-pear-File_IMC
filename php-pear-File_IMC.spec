@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - create and parse Internet Mail Consortium-style files
-Summary(pl):	%{_pearname} - tworzenie i parsowanie plików typu Internet Mail Consortium
+Summary(pl.UTF-8):   %{_pearname} - tworzenie i parsowanie plikÃ³w typu Internet Mail Consortium
 Name:		php-pear-%{_pearname}
 Version:	0.3
 Release:	4
@@ -32,14 +32,14 @@ Again, see the examples.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ta klasa pozwala programowo tworzyæ pliki vCard i vCalendar oraz
-pobieraæ tekst.
+%description -l pl.UTF-8
+Ta klasa pozwala programowo tworzyÄ‡ pliki vCard i vCalendar oraz
+pobieraÄ‡ tekst.
 
-WA¯NE: struktura tablic zmieni³a siê nieco w stosunku do
-Contact_Vcard_Parse. Now± strukturê mo¿na obejrzeæ w przyk³adzie.
-U¿ycie wzorców tak¿e ró¿ni siê od Contact_Vcard, co równie¿ mo¿na
-zobaczyæ w przyk³adach.
+WAÅ»NE: struktura tablic zmieniÅ‚a siÄ™ nieco w stosunku do
+Contact_Vcard_Parse. NowÄ… strukturÄ™ moÅ¼na obejrzeÄ‡ w przykÅ‚adzie.
+UÅ¼ycie wzorcÃ³w takÅ¼e rÃ³Å¼ni siÄ™ od Contact_Vcard, co rÃ³wnieÅ¼ moÅ¼na
+zobaczyÄ‡ w przykÅ‚adach.
 
 Ta klasa ma w PEAR status: %{_status}.
 
