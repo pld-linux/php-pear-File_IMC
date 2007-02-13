@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - create and parse Internet Mail Consortium-style files
-Summary(pl.UTF-8):   %{_pearname} - tworzenie i parsowanie plików typu Internet Mail Consortium
+Summary(pl.UTF-8):	%{_pearname} - tworzenie i parsowanie plików typu Internet Mail Consortium
 Name:		php-pear-%{_pearname}
 Version:	0.3
 Release:	4
