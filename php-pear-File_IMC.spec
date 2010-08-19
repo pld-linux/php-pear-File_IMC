@@ -3,16 +3,15 @@
 %define		_subclass	IMC
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - create and parse Internet Mail Consortium-style files
 Summary(pl.UTF-8):	%{_pearname} - tworzenie i parsowanie plików typu Internet Mail Consortium
 Name:		php-pear-%{_pearname}
-Version:	0.3
-Release:	5
+Version:	0.4.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	48b2b15969f5f5aecaf8e76eef03a6d1
+# Source0-md5:	9a077a7384375faf2d929371ff5815eb
 URL:		http://pear.php.net/package/File_IMC/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -46,10 +45,20 @@ Ta klasa ma w PEAR status: %{_status}.
 %prep
 %pear_package_setup
 
+install -d examples
+mv docs/File_IMC/docs/sample.* examples
+mv docs/File_IMC/docs/*example.php examples
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
+
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+
+# don't care for tests
+rm -rf $RPM_BUILD_ROOT%{php_pear_dir}/tests/%{_pearname}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,7 +66,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc install.log
-%doc docs/%{_pearname}/{sample.*,*.php}
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}
+
+%{_examplesdir}/%{name}-%{version}
