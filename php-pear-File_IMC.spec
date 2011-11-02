@@ -4,12 +4,12 @@
 Summary:	%{_pearname} - create and parse Internet Mail Consortium-style files
 Summary(pl.UTF-8):	%{_pearname} - tworzenie i parsowanie plików typu Internet Mail Consortium
 Name:		php-pear-%{_pearname}
-Version:	0.4.2
+Version:	0.4.3
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	147cc8d0ae18a44c195bcd320d00e34d
+# Source0-md5:	2a5b423758d30fbf207a4e6dafaeaf88
 URL:		http://pear.php.net/package/File_IMC/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
